@@ -1,7 +1,7 @@
-default: library
+default: rectangle
 
-library: library.o
-	g++ -Wall -O3 -shared library.cpp -o library.so
+rectangle: rectangle.o
+	g++ -Wall -O3 -shared rectangle.cpp -o rectangle.so
 
 run:
 	python3 run_library.py
